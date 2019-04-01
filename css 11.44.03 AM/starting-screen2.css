@@ -1,0 +1,15 @@
+.inp {
+  display: block;
+  width: 60vw;
+  height: 10vw;
+  border: 1px solid;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 25pt;
+  text-align: left;
+  margin-left: 20vw;
+}
+
+.centerdiv {
+  top: 100vh;
+}
