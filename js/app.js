@@ -33,5 +33,4 @@ var dramamovie = {
 
 //CHANGE STATE FUNCTIONS
 
-
 //CHANGE UI FUNCTIONS

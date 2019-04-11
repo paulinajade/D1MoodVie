@@ -1,25 +1,90 @@
 
-
-@media only screen and (min-width: 375px)  {
-
-.Head {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
+mediaq@media only screen and (max-width: 475px) {
+.head {
+  position: relative;
+  width: 400px;
+  height: 210vh;
   text-align: center;
-  top: 50vh;
-  background-color: ;
+  top: 20%;
+  align-content: center;
 }
 
-#logo {
-  width: 60vw;
-  height: 35vh;
-  }
+.logo {
+ width: 50%;
+ height:10%;
+}
+
+img {
+  width:300px;
+}
+
+body {
+  text-align: center;
+}
 
 #submitbutton{
-  width:200px;
+  width:40%;
   height:30px;
   background-color: dodgerblue;
-  
+  color: white;
+  font-family: 'Questrial', sans-serif;}
+  position: relative;
 }
+
+.custom-select{
+  position: relative;
+  font-family: "Questrial", "Sans-Serif"
 }
+
+.inp{
+  font-family: "Questrial", "Sans-Serif";
+}
+
+select{
+  width: 60%;
+  height: 40px;
+  font-size: 20pt;
+  font-family: "Questrial", "Sans-Serif";
+  background-color: dodgerblue;
+  color: white;
+}
+
+.navigation {
+  z-index: 1;
+}
+
+#menuToggle{
+  display: inline;
+  position: absolute;
+  top: 20%;
+  right: 6.5%;
+
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.page-header-cont {
+  top: 10vh;
+  position: relative;
+  font-family: myTitleFont;
+}
+
+.page-header {
+color: #008ccf;
+}
+
+.headbar {
+  text-align: center;
+  height: 11vh;
+  width: 100vw;
+  background-color: #FF3593;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+}
+

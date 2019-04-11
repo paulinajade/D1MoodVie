@@ -2,8 +2,10 @@
 <html>
   <head>
     <title> Dynamiclab10 </title>
-
-    <link href="css/starting-screen2.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Antic|Questrial|Righteous" rel="stylesheet">
+    <link href="css/app.css" type="text/css" rel="stylesheet"/>
     <script src="js/app.js"></script>
   </head>
 
@@ -12,13 +14,45 @@
 
     <div class="app">
       <header class="Head">
-        <img id="logo" src="img/logo.jpg" />
+        <img id="logo" src="svg/moodvie.svg" />
       </header>
 
-<div class="centerdiv">
-      <input class="inp" type="text" placeholder="Mood">
-      <input class="inp" type="text" placeholder="Genre">
-      <input class="inp" type="text" placeholder="Era">
+      <nav role="navigation">
+          <div id="menuToggle">
+    
+            <input type="checkbox" />
+    
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href=""><li>Home</li></a>
+              <a href=""><li>Moovie Picker</li></a>
+              <a href=""><li>MyMooVies</li></a>
+            </ul>
+      </div>
+
+      <br><br><br>
+
+<div class="custom-select">
+  <select class="select" id="mood">
+      <option class="inp" value="0" >Happy</option>
+      <option class="inp" value="1">Sad</option>
+      <option class="inp" value="2">Brave</option>
+      <option class="inp" value="3">Loving</option>
+  </select>
+  <br><br>
+  <select class="select" id="genre">
+      <option class="inp" value="0" >Comedy</option>
+      <option class="inp" value="1">Horror/Thriller</option>
+      <option class="inp" value="2">Romance</option>
+      <option class="inp" value="3">Drama</option>
+  </select>
+  <br><br>
+  <select class="select" id="era">
+      <option class="inp" value="0" >Before 2000s</option>
+      <option class="inp" value="1">After 2000s></option>
+  </select>
 </div>
 
 <button type="button" id="submitbutton">Submit</button>
