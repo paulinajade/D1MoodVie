@@ -16,4 +16,10 @@
   height: 35vh;
   }
 
+#submitbutton{
+  width:200px;
+  height:30px;
+  background-color: dodgerblue;
+  
+}
 }
