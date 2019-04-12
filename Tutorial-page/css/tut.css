@@ -71,30 +71,12 @@
     z-index: -1;
   }
 
-
-  #corner_blue {
-    top: 0;
-    position: fixed;
-    right: 0;
-    transform:  rotate(0deg);
-    z-index: -1;
-  }
-
   #corner_yellow {
     top: 0;
     position: fixed;
     transform: rotate(270deg);
     left: 0;
   }
-
-  #corner_green {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    transform:  rotate(180deg);
-    z-index: -1;
-  }
-
 
   .Corner-art {
     margin: 0;
@@ -109,8 +91,8 @@
     transition: color 0.3s ease;
   }
 
-  a:hover{
-    color: tomato;
+  a:hover :not(.disc-header){
+    color:yellow;
   }
 
   #menuToggle{
@@ -303,11 +285,30 @@
 
 
 .footer {
-  height: 50vw;
+  height: 20vh;
   bottom: 0;
   width: 100vw;
   background-color: #008cff;
+  position:fixed;
 }
+
+.footer>span{
+  color:white;
+  margin-top:10px;
+}
+
+.footertext>hr{
+  width:60%;
+}
+
+.footertext {
+  margin-top:20px;
+  color:white;
+  font-family: "Antic","Sans-Serif";
+  position: absolute;
+  left:25%;
+}
+
 
 
 
