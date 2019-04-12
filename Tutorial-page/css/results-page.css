@@ -19,33 +19,34 @@
     top: 0;
     height: 11vh;
     width: 100vw;
-    background-color: #FF3593;
+    background-color:white;
     position: fixed;
     z-index: 1;
   }
 
   #logo {
-    top: 0;
-    width: 35vw;
-    height: 5.5vh;
-    text-align: center;
-    margin-top: 2vh;
+    width:300px;
+top:120px;
+position: absolute;
+left: 20%;
   }
 
   .page-header-cont {
-    top: 10vh;
+    top: 25vh;
     position: relative;
     font-family: myTitleFont;
 
   }
 
   .page-header {
-  color: #008ccf;
+  color: #008cff;
   }
 
   .title {
-    margin-top: 10vh;
-    font-size: 30pt;
+    margin-top: 20vh;
+    font-size: 24pt;
+    font-family: "Questrial", "Sans-Serif";
+    
   }
 
   .resultstitle {

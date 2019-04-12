@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title> Dynamiclab10 </title>
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
@@ -13,9 +13,17 @@
    <body>
 
     <div class="app">
-      <header class="Head">
-        <img id="logo" src="svg/moodvie.svg" />
-      </header>
+        <header class="Head">
+
+            <svg width="100px" height="100px" version="1.1" id="corner_yellow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 161.23 161.23" style="enable-background:new 0 0 161.23 161.23;" xml:space="preserve">
+            <style type="text/css">
+             .st0{fill:#E9FF00;stroke:#D3D3D3;stroke-width:0.25;stroke-miterlimit:10;}
+            </style>
+            <polygon class="st0" points="125.1,36.12 125.1,124.92 161.1,160.92 161.1,0.12 0.3,0.12 36.3,36.12 "/>
+            </svg>
+
+      <!-- Hamburger-->
 
       <nav role="navigation">
           <div id="menuToggle">
@@ -27,10 +35,15 @@
             <span></span>
             <ul id="menu">
               <a href=""><li>Home</li></a>
-              <a href=""><li>Moovie Picker</li></a>
-              <a href=""><li>MyMooVies</li></a>
+              <a href=""><li>Moovie picker</li></a>
+              <a href="#"><li>MyMoovies</li></a>
             </ul>
-      </div>
+          </div>
+        </nav>
+          <img id="logo" src="../svg/moodvie.svg" />
+      </header>
+    
+
 
       <br><br><br>
 
@@ -41,21 +54,28 @@
       <option class="inp" value="2">Brave</option>
       <option class="inp" value="3">Loving</option>
   </select>
-  <br><br>
+  <br><br><br>
   <select class="select" id="genre">
       <option class="inp" value="0" >Comedy</option>
       <option class="inp" value="1">Horror/Thriller</option>
       <option class="inp" value="2">Romance</option>
       <option class="inp" value="3">Drama</option>
   </select>
-  <br><br>
+  <br><br><br>
   <select class="select" id="era">
       <option class="inp" value="0" >Before 2000s</option>
-      <option class="inp" value="1">After 2000s></option>
+      <option class="inp" value="1">After 2000s</option>
   </select>
 </div>
 
-<button type="button" id="submitbutton">Submit</button>
+<button type="button" id="submitbutton"><a href="Tutorial-page/Movies-page.html">Submit</a></button>
 
+<svg width="100px" height="100px" version="1.1" id="corner_pink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 161.23 161.23" style="enable-background:new 0 0 161.23 161.23;" xml:space="preserve">
+<style type="text/css">
+.st1{fill:#FF3593;stroke:#D3D3D3;stroke-width:0.25;stroke-miterlimit:10;}
+</style>
+<polygon class="st1" points="125.1,36.12 125.1,124.92 161.1,160.92 161.1,0.12 0.3,0.12 36.3,36.12 "/>
+</svg>
   </body>
 </html>

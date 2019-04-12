@@ -1,5 +1,6 @@
 
-mediaq@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 475px) {
+
 .head {
   position: relative;
   width: 400px;
@@ -9,13 +10,11 @@ mediaq@media only screen and (max-width: 475px) {
   align-content: center;
 }
 
-.logo {
- width: 50%;
- height:10%;
-}
-
 img {
-  width:300px;
+width:300px;
+top:120px;
+position: absolute;
+left: 20%;
 }
 
 body {
@@ -23,21 +22,43 @@ body {
 }
 
 #submitbutton{
-  width:40%;
-  height:30px;
-  background-color: dodgerblue;
+  width:50%;
+  height:40px;
+  background-color: #00ff00;
   color: white;
-  font-family: 'Questrial', sans-serif;}
-  position: relative;
+  font-family: 'Questrial', sans-serif;
+  position: absolute;
+  border-radius: 3px;
+  bottom: 18%;
+  left: 25%;
+  font-size: 18pt;
+}
+
+#submitbutton:hover{
+  background-color: dodgerblue;
 }
 
 .custom-select{
   position: relative;
-  font-family: "Questrial", "Sans-Serif"
+  font-family: "Questrial", "Sans-Serif";
+  position: relative;
+  top: 40%;
+  position: absolute;
+  width:100%;
+  height: 60%;
 }
 
 .inp{
   font-family: "Questrial", "Sans-Serif";
+}
+
+.Head {
+  text-align: center;
+  height: 11vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 }
 
 select{
@@ -47,10 +68,18 @@ select{
   font-family: "Questrial", "Sans-Serif";
   background-color: dodgerblue;
   color: white;
+  cursor:
 }
 
-.navigation {
-  z-index: 1;
+a{
+  text-decoration: none;
+  color:white;
+  transition: color 0.3s ease;
+  font-family: "Questrial", "Sans-Serif";
+}
+
+a:hover :not(#submitbutton){
+  color: yellow;
 }
 
 #menuToggle{
@@ -58,33 +87,165 @@ select{
   position: absolute;
   top: 20%;
   right: 6.5%;
-
-
   z-index: 1;
-
   -webkit-user-select: none;
   user-select: none;
 }
 
-.page-header-cont {
-  top: 10vh;
-  position: relative;
-  font-family: myTitleFont;
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
 }
 
-.page-header {
-color: #008ccf;
-}
-
-.headbar {
-  text-align: center;
-  height: 11vh;
-  width: 100vw;
-  background-color: #FF3593;
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span{
+  top: 20px;
+  right: 5px;
   position: fixed;
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 4px;
+  position: relative;
+  background: black;
+  border-radius: 3px;
+
   z-index: 1;
-  top: 0;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
+
+#menuToggle span:first-child{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+
+#menuToggle input:checked ~ span:nth-last-child(3){
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+
+#menuToggle input:checked ~ span:nth-last-child(2){
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+
+#menu{
+  font-family: myBodyFont;
+  position: absolute;
+  width: 100vw;
+  margin: 0 0 0 -100vw;
+  padding: 50px;
+  height: 100vh;
+  background-color: #008cff;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(0%, -130%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  text-align: center;
+}
+
+#menu li{
+  padding: 10px 0;
+  font-size: 22px;
+  padding-left: 5vw;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul{
+  transform: translate(0%, 0%);
+  height: 100vh;
+  top: -40px;
+
+}
+
+
+
+
+
+  #corner_pink {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: rotate(90deg);
+    z-index: -1;
+  }
+
+
+  #corner_blue {
+    top: 0;
+    position: fixed;
+    right: 0;
+    transform:  rotate(0deg);
+    z-index: -1;
+  }
+
+  #corner_yellow {
+    top: 0;
+    position: fixed;
+    transform: rotate(270deg);
+    left: 0;
+  }
+
+  #corner_green {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform:  rotate(180deg);
+    z-index: -1;
+  }
+
+
+  .Corner-art {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 }
 
