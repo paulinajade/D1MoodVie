@@ -34,12 +34,10 @@
   }
 
   #logo {
-    top: 0;
-    width: 35vw;
+    top: 120px;
+    width: 300px;
     height: 5.5vh;
-    text-align: center;
-    margin-top: 2vh;
-
+    position: absolute;
   }
 
   .app {
