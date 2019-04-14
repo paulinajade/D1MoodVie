@@ -198,7 +198,7 @@ a:hover{
   height: 4px;
   margin-bottom: 4px;
   position: relative;
-  background: black;
+  background: grey;
   border-radius: 3px;
 
   z-index: 1;
@@ -225,7 +225,7 @@ a:hover{
 #menuToggle input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: yellow;
 }
 
 /*
@@ -264,12 +264,20 @@ a:hover{
   transform: translate(0%, -130%);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   text-align: center;
+  font-size: 44pt;
 }
 
 #menu li{
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 33px;
   padding-left: 5vw;
+  margin-top: 15%;
+  top: 20%;
+  color:white;
+}
+
+#menu li:hover{
+  color:yellow;
 }
 
 /*

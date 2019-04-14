@@ -118,7 +118,7 @@ a:hover :not(#submitbutton){
   height: 4px;
   margin-bottom: 4px;
   position: relative;
-  background: black;
+  background:grey;
   border-radius: 3px;
 
   z-index: 1;
@@ -145,7 +145,7 @@ a:hover :not(#submitbutton){
 #menuToggle input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: yellow;
 }
 
 /*
@@ -189,8 +189,10 @@ a:hover :not(#submitbutton){
 
 #menu li{
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 33px;
   padding-left: 5vw;
+  margin-top: 15%;
+  top: 20%;
 }
 
 /*
@@ -201,6 +203,10 @@ a:hover :not(#submitbutton){
   height: 100vh;
   top: -40px;
 
+}
+
+#menu>a{
+  font-size: 44pt;
 }
 
 

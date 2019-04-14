@@ -5,6 +5,12 @@
   padding: 0;
   }
 
+  .page-header-cont {
+    top: 10vh;
+    position: relative;
+    font-family: myTitleFont;
+  }
+
   .navigation {
     z-index: 1;
   }
@@ -37,7 +43,7 @@
     text-align: center;
     height: 11vh;
     width: 100vw;
-    background-color: #FF3593;
+    background-color:white;
     position: fixed;
     z-index: 1;
   }
@@ -48,8 +54,9 @@
 
   .moovie-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto ;
     margin-bottom: 300px;
+    border:20px transparent;
   }
 
   .movietitle {
@@ -89,7 +96,7 @@
 
 .page-header {
   font-family: myTitleFont;
-  color: #008ccf;
+  color: #008cff;
 }
 
 
@@ -174,7 +181,7 @@ a{
 }
 
 a:hover{
-  color: tomato;
+  color: yellow;
 }
 
 #menuToggle{
@@ -212,7 +219,7 @@ a:hover{
   height: 4px;
   margin-bottom: 4px;
   position: relative;
-  background: black;
+  background:grey;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -236,7 +243,7 @@ a:hover{
 #menuToggle input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: yellow;
 }
 
 /*
@@ -279,8 +286,15 @@ a:hover{
 
 #menu li{
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 33px;
   padding-left: 5vw;
+  font-family:myBodyfont;
+  margin-top:15%;
+  color:white;
+}
+
+#menu li:hover{
+  color:yellow;
 }
 
 /*
@@ -294,6 +308,34 @@ a:hover{
 }
 
 
+.footer {
+  height: 20vh;
+  bottom: 0;
+  width: 100vw;
+  background-color: #008cff;
+  position:fixed;
+  display: flex;
+}
+
+.footer>span{
+  color:white;
+  margin-top:10px;
+}
+
+.footertext>hr{
+  width:60%;
+}
+
+.footertext {
+  margin-top:20px;
+  color:white;
+  font-family: "Antic","Sans-Serif";
+  position: absolute;
+}
+ .footertext:not(hr){
+  left:25%;
+
+ }
 
 
 
