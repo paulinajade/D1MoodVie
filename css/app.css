@@ -10,18 +10,16 @@
   align-content: center;
 }
 
-img {
-width:300px;
-top:120px;
-position: absolute;
-left: 20%;
+.inpdesc{
+  color: grey;
+  font-family: "Questrial", "Sans-Serif";
 }
 
-#logo {
-  position: absolute;
-  width: 80vw;
-  height: 10vh;
-  left: 10vw;
+img {
+width:340px;
+top:140px;
+position: absolute;
+left:18%;
 }
 
 
@@ -36,10 +34,11 @@ body {
   color: white;
   font-family: 'Questrial', sans-serif;
   position: absolute;
-  border-radius: 3px;
+  border-radius: 7px;
   bottom: 18%;
-  left: 25%;
+  left: 28%;
   font-size: 18pt;
+  bottom: 13%;
 }
 
 #submitbutton:hover{

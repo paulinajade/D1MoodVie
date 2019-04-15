@@ -24,13 +24,13 @@
   }
 
   #logo {
-    width:40vw;;
-    top: 4vh;
-    left: 30vw;
-    height: 4vh;
-    position: fixed;
-    background-color: white;
+  width:340px;
+  top:140px;
+  position: absolute;
+  left:18%;
+  background-color: white;
   }
+  
 
 
 
