@@ -50,12 +50,16 @@ window.onload = function() {
 
     var button = document.createElement('button');
     button.setAttribute('class', 'moviebutt');
+    button.setAttribute('id', movie.title);
     button.setAttribute('type', 'submit');
     button.innerHTML = 'Read More';
-    button.addEventListener('click', () => {
-      localStorage.setItem('currentMovieTitle', movie.title);
-    });
 
+    function setListener1(title) {
+      return function() {
+        localStorage.setItem('currentMovieTitle', title);
+      };  
+    }
+    button.addEventListener('click', setListener1(movie.title));
     form.appendChild(button);
 
     movieContainer.appendChild(form);

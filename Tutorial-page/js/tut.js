@@ -24,4 +24,17 @@ window.onload = function() {
 
   var description = document.getElementsByClassName('disc-header')[0];
   description.innerHTML = movie.longDescription;
+
+  var addToMovies = document.getElementById("add-to-movies");
+  document.addEventListener('click', function() {
+    var myMovies = JSON.parse(localStorage.getItem('myMovies'));
+    if (myMovies) {
+      localStorage.setItem('myMovies', JSON.stringify(myMovies.concat(currentMovieTitle)))
+    } else {
+      localStorage.setItem('myMovies', JSON.stringify([currentMovieTitle]))
+    }
+
+
+    window.location = "My-Moovies.html";
+  });
 }
