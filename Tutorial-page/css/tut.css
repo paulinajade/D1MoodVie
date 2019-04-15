@@ -6,7 +6,7 @@
     src: url(Righteous-Regular.ttf);
     }
   
-    @font-face {
+  @font-face {
     font-family: myBodyFont;
     src: url(Questrial-Regular.ttf);
     }
@@ -24,7 +24,7 @@
 
 
   #logo {
-    width:40vw;;
+    width:40vw;
     top: 4vh;
     left: 30vw;
     height: 4vh;
@@ -42,19 +42,22 @@
   }
 
   .page-header {
+  font-family: myTitleFont;
   background-color: white;
   width: 100vw;
   color: #008cff;
   margin-top: 9vh;
   font-size: 16pt;
-  font-family: myTitleFont;
   }
+  
 
 
 
   .headbar {
+    
+    background-color:white;
     text-align: center;
-    height: 11vh;
+    height: 13vh;
     width: 100vw;
     position: fixed;
     z-index: 1;
@@ -262,6 +265,11 @@
     font-size: 10pt;
   }
 
+  #add-to-movies {
+    width: 100px;
+    height: 40px;
+  }
+
 
 
   #AddButton{
@@ -270,7 +278,7 @@
     margin: auto;
     display: block;
     margin-top: 20px;
-    margin-bottom: 10vh;
+    margin-bottom: 1vh;
 
   }
 
@@ -285,7 +293,7 @@
   .disc-header {
     width: 70%;
     margin: auto;
-    margin-top: 2vh;
+    margin-top: 6.5vh;
     text-align: center;
     font-family: myBodyFont;
     font-size: 12pt;
@@ -305,7 +313,7 @@
   bottom: 0;
   width: 100vw;
   background-color: #008cff;
-  position:fixed;
+  position:sticky;
 }
 
 .footer>span{
@@ -318,11 +326,12 @@
 }
 
 .footertext {
+  font-size: 10pt;
   margin-top:20px;
   color:white;
   font-family: "Antic","Sans-Serif";
-  position: absolute;
-  left:25%;
+  text-align: center;
+  padding-top: 10px;
 }
 
 

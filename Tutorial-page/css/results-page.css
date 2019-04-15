@@ -87,6 +87,7 @@
   }
 
   .footer {
+    position: sticky;
     height: 20vh;
     bottom: 0;
     width: 100vw;
@@ -103,11 +104,12 @@
 }
 
 .footertext {
+  font-size: 10pt;
   margin-top:20px;
   color:white;
   font-family: "Antic","Sans-Serif";
-  position: absolute;
-  left:25%;
+  text-align: center;
+  padding-top: 10px;
 }
 
 #app2 {

@@ -29,10 +29,7 @@ window.onload = function() {
     movieImage.setAttribute('src', currentMovie.url);
     movieCont.appendChild(movieImage);
 
-    var movieButt = document.createElement('button');
-    movieButt.setAttribute('class', 'moviebutt');
-    movieButt.innerHTML = 'Info';
-    movieCont.appendChild(movieButt);
+    
 
     document.getElementsByClassName('moovie-grid')[0].appendChild(movieCont);
   }
