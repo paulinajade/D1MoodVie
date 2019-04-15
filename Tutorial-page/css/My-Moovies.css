@@ -31,17 +31,9 @@
 
 
 
-  .search-cont {
-    top: 10vh;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-  }
-
-
   .headbar {
-    text-align: center;
-    height: 11vh;
+    top: 0;
+    height: 10vh;
     width: 100vw;
     background-color:white;
     position: fixed;
@@ -52,6 +44,37 @@
     font-family: myBodyFont;
   }
 
+
+  #logo {
+    width:40vw;;
+    top: 4vh;
+    left: 30vw;
+    height: 4vh;
+    position: fixed;
+    background-color: white;
+  }
+
+
+
+
+  .page-header-cont {
+    width: 100vw;
+    top: 10vh;
+    position: fixed;
+    font-family: myTitleFont;
+    background-color: white;
+  }
+
+  .page-header {
+  color: #008cff;
+  margin-top: 10vh;
+  font-size: 16pt;
+  background-color: white;
+  text-align: center;
+  height: 40px;
+  }
+
+
   .moovie-grid {
     display: grid;
     grid-template-columns: auto auto ;
@@ -61,27 +84,20 @@
 
   .movietitle {
     font-size: 15pt;
-    font-family: myTitleFont;
+    font-family: "Questrial", "Sans-Serif";
   }
 
-  #logo {
-    width: 35vw;
-    height: 5.5vh;
-    position: relative;
-    margin: 2vh;
-
-  }
 
   .moovie-cont {
     position: relative;
-    top: 30vh;
+    top: 17vh;
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 5vh;
   }
 
 
  img {
-    width: 30vw;
+    width: 28vw;
   }
 
   .search-title {
@@ -135,7 +151,7 @@
   color: #FFFFFF;
   font-family: myBodyFont;
   font-size: 12pt;
-  margin-top: 5vh;
+  margin-top: 3vh;
 
 }
 
@@ -338,6 +354,30 @@ a:hover{
  }
 
 
+.footer {
+  text-align: center;
+  height: 20vh;
+  bottom: 0;
+  width: 100vw;
+  background-color: #008cff;
+}
+
+.footer>span{
+  color:white;
+  margin-top:10px;
+}
+
+.footertext>hr{
+  width:60%;
+}
+
+.footertext {
+  margin-top:20px;
+  color:white;
+  font-family: "Antic","Sans-Serif";
+  position: absolute;
+  left:25%;
+}
 
 
 

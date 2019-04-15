@@ -17,6 +17,14 @@ position: absolute;
 left: 20%;
 }
 
+#logo {
+  position: absolute;
+  width: 80vw;
+  height: 10vh;
+  left: 10vw;
+}
+
+
 body {
   text-align: center;
 }

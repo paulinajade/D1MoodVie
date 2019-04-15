@@ -1,3 +1,6 @@
+
+@media only screen and (max-width: 475px) {
+
 .inp {
   display: block;
   width: 60vw;
@@ -12,4 +15,5 @@
 
 .centerdiv {
   top: 100vh;
+ }
 }
