@@ -266,8 +266,13 @@
   }
 
   #add-to-movies {
-    width: 100px;
+    width: 40px;
     height: 40px;
+    background-image: url(../img/addbutton.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    border: none;
+    
   }
 
 
