@@ -239,7 +239,7 @@
 
   }
 
-  #movie-image {
+  .movie-image {
     display: block;
     margin: auto;
     width: 60%;

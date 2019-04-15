@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Input Result </title>
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Questrial|Righteous" rel="stylesheet">
@@ -9,120 +9,60 @@
     <link href="css/app.css" type="text/css" rel="stylesheet"/>
     <link href="css/results-page.css" type="text/css" rel="stylesheet"/>
     <script src="js/tut.js"></script>
+    <script src="../js/Movies.JSON" type="text/javascript"></script>
+    <script src="js/moviesPage.js"></script>
   </head>
 
+  <body>
+    <div id="app2">
+      <header class="headbar">
+        <!--SVGS-->
+        <svg width="100px" height="100px" version="1.1" id="corner_yellow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 161.23 161.23" style="enable-background:new 0 0 161.23 161.23;" xml:space="preserve">
+          <style type="text/css">
+            .st0{fill:#E9FF00;stroke:#D3D3D3;stroke-width:0.25;stroke-miterlimit:10;}
+          </style>
+          <polygon class="st0" points="125.1,36.12 125.1,124.92 161.1,160.92 161.1,0.12 0.3,0.12 36.3,36.12 "/>
+        </svg>
 
-   <body>
-
-
-
-
-
-
-     <div id="app2">
-
-       <header class="headbar">
-
-         <!--SVGS-->
-
-         <svg width="100px" height="100px" version="1.1" id="corner_yellow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 161.23 161.23" style="enable-background:new 0 0 161.23 161.23;" xml:space="preserve">
-         <style type="text/css">
-          .st0{fill:#E9FF00;stroke:#D3D3D3;stroke-width:0.25;stroke-miterlimit:10;}
-         </style>
-         <polygon class="st0" points="125.1,36.12 125.1,124.92 161.1,160.92 161.1,0.12 0.3,0.12 36.3,36.12 "/>
-         </svg>
-
-         <!-- Hamburger-->
-
-
-         <nav role="navigation">
-       <div id="menuToggle">
-
-         <input type="checkbox" />
-
-         <span></span>
-         <span></span>
-         <span></span>
-         <ul id="menu">
-          <a href="../Starting-screen2.html"><li>Home</li></a>
-          <a href="Movies-page.html"><li>Moovie results</li></a>
-          <a href="My-Moovies.html"><li>MyMoovies</li></a>
-         </ul>
-       </div>
-     </nav>
-     <div class="page-header-cont">
-      <img id="logo" src="img/Logo.png" />
+        <!-- Hamburger-->
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="../Starting-screen2.html"><li>Home</li></a>
+              <a href="Movies-page.html"><li>Moovie results</li></a>
+              <a href="My-Moovies.html"><li>MyMoovies</li></a>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-header-cont">
+          <img id="logo" src="img/Logo.png" />
           <h1 class="page-header">Your Results</h1>
-      </div>
-       </header>
-
-      
-
-
-<!--Svgs-->
-
-
-      <div class="movies" id="firstmovie">
-        <h2 class="title">SuperBad</h2>
-        <img class="movie" src="img/superbad.png"/>
-          <p class="description">goodmovie</p>
-          <form action="Tutorial.html" method="get" target="_blank">
-          <button class="moviebutt" type="submit">Read More</button>
-       </form>
-     </div>
-      <div class="movies">
-        <h2 class="title">SuperBad</h2>
-        <img class="movie" src="img/superbad.png"/>
-          <p class="description">goodmovie</p>
-          <form action="Tutorial.html" method="get" target="_blank">
-          <button class="moviebutt" type="submit">Read More</button>
-       </form>
-     </div>
-      <div class="movies">
-        <h2 class="title">SuperBad</h2>
-        <img class="movie" src="img/superbad.png"/>
-          <p class="description">goodmovie</p>
-          <form action="Tutorial.html" method="get" target="_blank">
-          <button class="moviebutt" type="submit">Read More</button>
-       </form>
-     </div>
-      <div class="movies">
-        <h2 class="title">SuperBad</h2>
-        <img class="movie" src="img/superbad.png"/>
-          <p class="description">goodmovie</p>
-          <form action="Tutorial.html" method="get" target="_blank">
-          <button class="moviebutt" type="submit">Read More</button>
-       </form>
-     </div>
-
-<!--SVGS-->
-
-
-     <svg width="100px" height="100px" version="1.1" id="corner_pink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 161.23 161.23" style="enable-background:new 0 0 161.23 161.23;" xml:space="preserve">
-     <style type="text/css">
-      .st1{fill:#FF3593;stroke:#D3D3D3;stroke-width:0.25;stroke-miterlimit:10;}
-     </style>
-     <polygon class="st1" points="125.1,36.12 125.1,124.92 161.1,160.92 161.1,0.12 0.3,0.12 36.3,36.12 "/>
-     </svg>
-
-     <div class="footer">
-       <div class="footertext">
-        <span id="footemail">moodvieco@films.ca</span>
-        <hr>
-        <span> Designed and Developed By <br> Deriq Danois and Paulina Martin</span>
-        <hr>
-        <span>Design Rights Reserved 2019</span>
         </div>
-     </div>
-
-   </div>
-
-
-
-
-
-
+      </header>
+<!--Svgs-->
+      <div id="movieList"></div>
+<!--SVGS-->
+      <svg width="100px" height="100px" version="1.1" id="corner_pink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 161.23 161.23" style="enable-background:new 0 0 161.23 161.23;" xml:space="preserve">
+        <style type="text/css">
+          .st1{fill:#FF3593;stroke:#D3D3D3;stroke-width:0.25;stroke-miterlimit:10;}
+        </style>
+        <polygon class="st1" points="125.1,36.12 125.1,124.92 161.1,160.92 161.1,0.12 0.3,0.12 36.3,36.12 "/>
+      </svg>
+      <div class="footer">
+        <div class="footertext">
+          <span id="footemail">moodvieco@films.ca</span>
+          <hr>
+          <span> Designed and Developed By <br> Deriq Danois and Paulina Martin</span>
+          <hr>
+          <span>Design Rights Reserved 2019</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -38,9 +38,8 @@ body {
   background-color: #00ff00;
   color: white;
   font-family: 'Questrial', sans-serif;
-  position: absolute;
   border-radius: 3px;
-  bottom: 18%;
+
   left: 25%;
   font-size: 18pt;
 }
@@ -50,10 +49,8 @@ body {
 }
 
 .custom-select{
-  position: relative;
   font-family: "Questrial", "Sans-Serif";
-  position: relative;
-  top: 40%;
+  top: 30%;
   position: absolute;
   width:100%;
   height: 60%;
@@ -73,12 +70,31 @@ body {
 }
 
 select{
+  margin-bottom: 2rem;
   width: 60%;
   height: 40px;
   font-size: 20pt;
   font-family: "Questrial", "Sans-Serif";
   background-color: dodgerblue;
   color: white;
+}
+
+ 
+@font-face {
+  font-family: myTitleFont;
+  src: url(Righteous-Regular.ttf);
+  }
+
+  @font-face {
+  font-family: myBodyFont;
+  src: url(Questrial-Regular.ttf);
+  }
+
+
+.label {
+  font-family: myBodyFont;
+  font-weight: 600;
+  font-size: 16pt;
 }
 
 a{
@@ -95,8 +111,8 @@ a:hover :not(#submitbutton){
 #menuToggle{
   display: inline;
   position: absolute;
-  top: 20%;
-  right: 6.5%;
+  top: 19%;
+  right: 8%;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -256,6 +272,9 @@ a:hover :not(#submitbutton){
     width: 100%;
     height: 100%;
   }
+
+
+
 
 }
 

@@ -43,9 +43,9 @@
   }
 
   .page-header {
-  color: #008cff;
-  margin-top: 10vh;
-  font-size: 16pt;
+    color: #008cff;
+    margin-top: 10vh;
+    font-size: 16pt;
   }
 
   .title {
@@ -67,27 +67,25 @@
     margin-top: 1%;
   }
 
+  .moviePoster {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin: auto;
+    margin-top: 5vh;
+  }
 
+  #firstmovie{
+    margin-top: 20vw;
+  }
 
-.movies {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  margin: auto;
-  margin-top: 5vh;
-}
-
-#firstmovie{
-  margin-top: 20vw;
-}
-
-.footer {
-  height: 20vh;
-  bottom: 0;
-  width: 100vw;
-  background-color: #008cff;
-}
+  .footer {
+    height: 20vh;
+    bottom: 0;
+    width: 100vw;
+    background-color: #008cff;
+  }
 
 .footer>span{
   color:white;
