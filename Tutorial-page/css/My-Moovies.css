@@ -25,19 +25,11 @@
 
 
 
-  .search-cont {
-    top: 10vh;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-  }
-
-
   .headbar {
-    text-align: center;
-    height: 11vh;
+    top: 0;
+    height: 10vh;
     width: 100vw;
-    background-color: #FF3593;
+    background-color:white;
     position: fixed;
     z-index: 1;
   }
@@ -45,6 +37,37 @@
   .title {
     font-family: myBodyFont;
   }
+
+
+  #logo {
+    width:40vw;;
+    top: 4vh;
+    left: 30vw;
+    height: 4vh;
+    position: fixed;
+    background-color: white;
+  }
+
+
+
+
+  .page-header-cont {
+    width: 100vw;
+    top: 10vh;
+    position: fixed;
+    font-family: myTitleFont;
+    background-color: white;
+  }
+
+  .page-header {
+  color: #008cff;
+  margin-top: 10vh;
+  font-size: 16pt;
+  background-color: white;
+  text-align: center;
+  height: 40px;
+  }
+
 
   .moovie-grid {
     display: grid;
@@ -57,24 +80,17 @@
     font-family: myTitleFont;
   }
 
-  #logo {
-    width: 35vw;
-    height: 5.5vh;
-    position: relative;
-    margin: 2vh;
-
-  }
 
   .moovie-cont {
     position: relative;
-    top: 30vh;
+    top: 27vh;
     text-align: center;
     margin-top: 20vh;
   }
 
 
  img {
-    width: 30vw;
+    width: 28vw;
   }
 
   .search-title {
@@ -296,6 +312,30 @@ a:hover{
 
 
 
+.footer {
+  text-align: center;
+  height: 20vh;
+  bottom: 0;
+  width: 100vw;
+  background-color: #008cff;
+}
+
+.footer>span{
+  color:white;
+  margin-top:10px;
+}
+
+.footertext>hr{
+  width:60%;
+}
+
+.footertext {
+  margin-top:20px;
+  color:white;
+  font-family: "Antic","Sans-Serif";
+  position: absolute;
+  left:25%;
+}
 
 
 
