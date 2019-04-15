@@ -1,5 +1,18 @@
 @media only screen and (max-width: 475px) {
 
+ 
+  @font-face {
+    font-family: myTitleFont;
+    src: url(Righteous-Regular.ttf);
+    }
+  
+    @font-face {
+    font-family: myBodyFont;
+    src: url(Questrial-Regular.ttf);
+    }
+  
+ 
+ 
   body {
   margin: 0;
   padding: 0;
@@ -25,7 +38,6 @@
     width: 100vw;
     top: 0;
     position: fixed;
-    font-family: myTitleFont;
     background-color: white;
   }
 
@@ -33,6 +45,7 @@
   color: #008cff;
   margin-top: 10vh;
   font-size: 16pt;
+  font-family: myTitleFont;
   }
 
 
@@ -251,22 +264,13 @@
     margin: auto;
     display: block;
     margin-top: 20px;
-    margin-bottom: 1vh;
-  }
+    margin-bottom: 10vh;
 
-  @font-face {
-  font-family: myTitleFont;
-  src: url(Righteous-Regular.ttf);
-  }
-
-  @font-face {
-  font-family: myBodyFont;
-  src: url(Questrial-Regular.ttf);
   }
 
   #movietitle {
     position: relative;
-    font-family: myTitleFont;
+    font-family: "Questrial", "Sans-Serif";
     margin-top: 20vh;
     font-size: 16pt;
   }

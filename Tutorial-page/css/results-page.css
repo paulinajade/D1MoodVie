@@ -49,6 +49,7 @@
   }
 
   .title {
+    font-family: myBodyFont;
     margin-top: 20vh;
     font-size: 20pt;
     font-family: "Questrial", "Sans-Serif";
@@ -56,7 +57,7 @@
   }
 
   .resultstitle {
-    font-family: myTitleFont;
+    font-family: myBodyFont;
     position: relative;
     color: #FFFFFF;
     display: inline-block;

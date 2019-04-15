@@ -77,15 +77,15 @@
 
   .movietitle {
     font-size: 15pt;
-    font-family: myTitleFont;
+    font-family: "Questrial", "Sans-Serif";
   }
 
 
   .moovie-cont {
     position: relative;
-    top: 27vh;
+    top: 17vh;
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 5vh;
   }
 
 
@@ -105,7 +105,7 @@
 
 .page-header {
   font-family: myTitleFont;
-  color: #008ccf;
+  color: #008cff;
 }
 
 
@@ -144,7 +144,7 @@
   color: #FFFFFF;
   font-family: myBodyFont;
   font-size: 12pt;
-  margin-top: 5vh;
+  margin-top: 3vh;
 
 }
 
