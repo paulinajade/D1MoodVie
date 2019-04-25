@@ -228,12 +228,28 @@ localStorage.setItem('movies', JSON.stringify([
     "era": "After 2000s"
   },
   {
+    "title": "The First Man",
+    "url": "http://www.reelviews.net/resources/img/posters/thumbs/first_man_poster.jpg",
+    "description": "A look at the life of the astronaut, Neil Armstrong, and the legendary space mission that led him to become the first man to walk on the Moon on",
+    "genre": "Drama",
+    "mood": "Loving",
+    "era": "After 2000s"
+  },
+  {
     "title": "Creed 2",
     "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Creed_II_poster.png/220px-Creed_II_poster.png",
     "description": "Creed II is a 2018 American sports drama film",
     "genre": "Drama",
     "mood": "Sad",
     "era": "After 2000s"
+  },
+  {
+    "title": "Creed 2",
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Creed_II_poster.png/220px-Creed_II_poster.png",
+    "description": "Creed II is a 2018 American sports drama film",
+    "genre": "Drama",
+    "mood": "Loving",
+    "era": "Before 2000s"
   },
   {
     "title": "The Godfather",
