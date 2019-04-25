@@ -5,7 +5,6 @@ var eras = ['Before 2000s', 'After 2000s'];
 var localStorage = window.localStorage;
 localStorage.setItem('movies', JSON.stringify([
   {
-    "number": 1,
     "title":"mcgroober",
     "url":"https://images-na.ssl-images-amazon.com/images/I/51FH7IeNxaL._SY445_.jpg",
     "description":"mcgroober vs the world gg",
@@ -341,16 +340,9 @@ window.onload = function() {
   var era   = document.querySelector("#era.select");
 
   document.querySelector("#submitbutton").addEventListener("click", function(){
-    // set storage with params
+    // Set local storage with parameters
     localStorage.setItem('mood', moods[mood.value])
     localStorage.setItem('genre', genres[genre.value])
     localStorage.setItem('era', eras[era.value])
-    // redirect
   });
 }
-
-//PROXY SETUP
-
-//CHANGE STATE FUNCTIONS
-
-//CHANGE UI FUNCTIONS

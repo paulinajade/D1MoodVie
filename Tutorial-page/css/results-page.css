@@ -87,7 +87,7 @@
   }
 
   .footer {
-    position: sticky;
+    position: relative;
     height: 20vh;
     bottom: 0;
     width: 100vw;

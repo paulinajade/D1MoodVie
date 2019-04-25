@@ -1,20 +1,23 @@
 var localStorage = window.localStorage;
 
 window.onload = function() {
+  // Get 'my movies' and 'all movies' from local storage
   var myMovies = JSON.parse(localStorage.getItem('myMovies'));
+  var allMovies = JSON.parse(localStorage.getItem('movies'));
 
+  // Loop through 'my movies' and display on page
   for (i = 0; i < myMovies.length; i++) {
     var movie = myMovies[i];
     var currentMovie;
-    var allMovies = JSON.parse(localStorage.getItem('movies'));
+    // Search for the current movie in all movies to get it's information
     for (var j = 0; j < allMovies.length; j++) {
-        var filterMovie = allMovies[j];
-        console.log(movie);
-        if (filterMovie.title === movie) {
-            currentMovie = filterMovie;
-        }
+      var filteredMovie = allMovies[j];
+      if (filteredMovie.title === movie) {
+        currentMovie = filteredMovie;
+      }
     }
     
+    // Create elements with movie information
     var movieCont = document.createElement('div');
     movieCont.setAttribute('class', 'moovie-cont');
 

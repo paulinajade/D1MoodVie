@@ -123,6 +123,7 @@
 }
 
 .footer {
+  position: relative;
   height: 50vh;
   bottom: 0;
   width: 100vw;
@@ -318,7 +319,7 @@ a:hover{
 
 
 .footer {
-  position: sticky;
+  position: relative;
   text-align: center;
   height: 20vh;
   bottom: 0;

@@ -313,12 +313,13 @@
 }
 
 
-.footer {
+.footer{
+  position: relative;
   height: 20vh;
   bottom: 0;
   width: 100vw;
   background-color: #008cff;
-  position:sticky;
+  
 }
 
 .footer>span{
