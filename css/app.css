@@ -12,15 +12,9 @@ left: 20%;
 
 #logo {
   position: absolute;
-<<<<<<< HEAD
   top: 6vh;
   width: 60vw;
   height: 7vh;
-=======
-  width: 60vw;
-  height: 8vh;
-  top: 50px;
->>>>>>> 2ebedc0223386e8cf1e40c9944da6ad9f30729ef
   left: 19vw;
 }
 
@@ -48,11 +42,7 @@ body {
 
 .custom-select{
   font-family: "Questrial", "Sans-Serif";
-<<<<<<< HEAD
   top: 22%;
-=======
-  top: 24%;
->>>>>>> 2ebedc0223386e8cf1e40c9944da6ad9f30729ef
   position: absolute;
   width:100%;
   height: 60%;
@@ -65,12 +55,8 @@ body {
 .Head {
   background-color: white;
   text-align: center;
-<<<<<<< HEAD
   background-color: white;
   height: 13vh;
-=======
-  height: 14vh;
->>>>>>> 2ebedc0223386e8cf1e40c9944da6ad9f30729ef
   width: 100vw;
   position: fixed;
   z-index: 1;
