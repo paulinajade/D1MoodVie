@@ -12,9 +12,8 @@ left: 20%;
 
 #logo {
   position: absolute;
-  top: 6vh;
+  top: 8vh;
   width: 60vw;
-  height: 7vh;
   left: 19vw;
 }
 
@@ -34,6 +33,7 @@ body {
   border-radius: 10px;
   left: 25%;
   font-size: 18pt;
+  bottom: 10vh;
 }
 
 #submitbutton:hover{
