@@ -2,7 +2,7 @@
 
   body {
     margin: 0;
-  padding: 0;
+    padding: 0;
   }
 
   .navigation {
@@ -19,6 +19,14 @@
     height: 300px;
   }
 
+  #headerbg {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-color: #FFFFFF;
+    top:0px;
+  }
+
 
   .headbar {
     top: 0;
@@ -30,29 +38,32 @@
   }
 
   #logo {
-    width: 40vw;
-    top: 4vh;
-    left: 30vw;
-    height: 4vh;
-    position: fixed;
-    background-color: white;
+    width: 50vw;
+    top: -110%;
+    left: 25%;
+    position: absolute;
+  }
+
+  #backarrow{
+    width:45px;
+    height: 40px;
+    position: absolute;
+    left:6%;
+    top:25%;
   }
   
 
 
 
-  .page-header-cont {
-    width: 100vw;
-    top: 0;
-    position: fixed;
-    font-family: myTitleFont;
-    background-color: white;
-  }
 
   .page-header {
     color: #008cff;
     margin-top: 10vh;
-    font-size: 16pt;
+    font-size: 12pt;
+    width: 100vw;
+    top: 7%;
+    position: fixed;
+    font-family: myBodyFont;
   }
 
   .title {
@@ -88,8 +99,8 @@
   }
 
   .footer {
-    position: relative;
-    height: 20vh;
+    position: absolute;
+    height: 70px;
     bottom: 0;
     width: 100vw;
     background-color: #008cff;
@@ -105,8 +116,7 @@
 }
 
 .footertext {
-  font-size: 10pt;
-  margin-top:20px;
+  font-size: 9pt;
   color:white;
   font-family: "Antic","Sans-Serif";
   text-align: center;
@@ -122,18 +132,18 @@
   bottom: 0;
   right: 0;
   transform: rotate(90deg);
-  z-index: -1;
+  z-index: 1;
 }
 
 .moviebutt {
   width: 40vw;
-  height: 6vh;
-  border-radius: 20px;
+  height: 5vh;
+  border-radius: 9px;
   background-color: #08ff00;
   margin-bottom: 5vh;
   color: #FFFFFF;
   font-family: myBodyFont;
-  font-size: 13pt;
+  font-size: 12pt;
   margin-top: 1vh;
 }
 
@@ -278,6 +288,10 @@ a:hover{
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   text-align: center;
   font-size: 44pt;
+}
+
+.menuwords{
+  z-index: 2;
 }
 
 #menu li{
