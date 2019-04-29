@@ -350,12 +350,14 @@ localStorage.setItem('movies', JSON.stringify([
 
 ]));
 
-window.onload = function() {
+window.onload = function(){
   var mood  = document.querySelector("#mood.select");
   var genre = document.querySelector("#genre.select");
   var era   = document.querySelector("#era.select");
 
-  document.querySelector("#submitbutton").addEventListener("click", function(){
+  var submit = document.querySelector("#submitbutton");
+  
+  submit.addEventListener("click", function(){
     // Set local storage with parameters
     localStorage.setItem('mood', moods[mood.value])
     localStorage.setItem('genre', genres[genre.value])

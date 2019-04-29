@@ -6,7 +6,7 @@
     src: url(Righteous-Regular.ttf);
     }
   
-    @font-face {
+  @font-face {
     font-family: myBodyFont;
     src: url(Questrial-Regular.ttf);
     }
@@ -24,7 +24,7 @@
 
 
   #logo {
-    width:40vw;;
+    width:40vw;
     top: 4vh;
     left: 30vw;
     height: 4vh;
@@ -42,17 +42,22 @@
   }
 
   .page-header {
-  color: #008cff;
-  margin-top: 10vh;
-  font-size: 16pt;
   font-family: myTitleFont;
+  background-color: white;
+  width: 100vw;
+  color: #008cff;
+  margin-top: 9vh;
+  font-size: 16pt;
   }
+  
 
 
 
   .headbar {
+    
+    background-color:white;
     text-align: center;
-    height: 11vh;
+    height: 13vh;
     width: 100vw;
     position: fixed;
     z-index: 1;
@@ -232,6 +237,11 @@
 
   }
 
+  img {
+    width: 280px;
+    height:310px;
+  }
+
   /*
    * And let's slide it in from the left
    */
@@ -239,13 +249,12 @@
     transform: translate(0%, 0%);
     height: 100vh;
     top: -40px;
-
   }
 
-  #movie-image {
+  .movie-image {
     display: block;
     margin: auto;
-    width: 60%;
+    width: 200px;
     height: 60%;
   }
 
@@ -259,6 +268,16 @@
     font-size: 10pt;
   }
 
+  #add-to-movies {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/addbutton.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    border: none;
+    
+  }
+
 
 
   #AddButton{
@@ -267,7 +286,7 @@
     margin: auto;
     display: block;
     margin-top: 20px;
-    margin-bottom: 10vh;
+    margin-bottom: 1vh;
 
   }
 
@@ -282,7 +301,7 @@
   .disc-header {
     width: 70%;
     margin: auto;
-    margin-top: 2vh;
+    margin-top: 6.5vh;
     text-align: center;
     font-family: myBodyFont;
     font-size: 12pt;
@@ -297,12 +316,13 @@
 }
 
 
-.footer {
+.footer{
+  position: relative;
   height: 20vh;
   bottom: 0;
   width: 100vw;
   background-color: #008cff;
-  position:fixed;
+  
 }
 
 .footer>span{
@@ -315,11 +335,12 @@
 }
 
 .footertext {
+  font-size: 10pt;
   margin-top:20px;
   color:white;
   font-family: "Antic","Sans-Serif";
-  position: absolute;
-  left:25%;
+  text-align: center;
+  padding-top: 10px;
 }
 
 
