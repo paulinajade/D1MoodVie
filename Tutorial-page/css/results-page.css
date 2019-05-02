@@ -39,7 +39,7 @@
 
   #logo {
     width: 50vw;
-    top: -110%;
+    top: -100%;
     left: 25%;
     position: absolute;
   }
@@ -49,7 +49,7 @@
     height: 40px;
     position: absolute;
     left:6%;
-    top:25%;
+    top:28%;
   }
   
 

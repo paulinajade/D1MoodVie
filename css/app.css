@@ -1,45 +1,23 @@
 
-
-  #corner_pink {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    transform: rotate(90deg);
-    z-index: -1;
-  }
-
-  #corner_yellow {
-    top: 0;
-    position: fixed;
-    transform: rotate(270deg);
-    left: 0;
-  }
-
-  .Corner-art {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-
-.inpdesc{
-  color: grey;
-  font-family: "Questrial", "Sans-Serif";
-}
+@media only screen and (max-width: 475px) {
 
 
 img {
-width:340px;
-top:140px;
+width:300px;
+top:120px;
 position: absolute;
+left: 20%;
 }
+
 
 #logo {
   position: absolute;
-  top: 12vh;
+  top: 13.5vh;
   width: 60vw;
-  left: 21%;
+  left: 19vw;
 }
+
+
 
 
 body {
@@ -52,11 +30,11 @@ body {
   background-color: #00ff00;
   color: white;
   font-family: 'Questrial', sans-serif;
+  border-radius: 10px;
+  left: 25%;
+  font-size: 16pt;
+  bottom: 5vh; 
   position: absolute;
-  border-radius: 7px;
-  bottom: 14%;
-  left: 28%;
-  font-size: 21px;
 }
 
 #submitbutton:hover{
@@ -71,10 +49,8 @@ body {
   height: 60%;
 }
 
-
 .inp{
   font-family: "Questrial", "Sans-Serif";
-  font-size: 17px;
 }
 
 .Head {
@@ -94,7 +70,7 @@ select{
   margin-bottom: 2rem;
   width: 60%;
   height: 40px;
-  font-size: 20pt;
+  font-size: 15pt;
   font-family: "Questrial", "Sans-Serif";
   background-color: dodgerblue;
   color: white;
@@ -112,13 +88,14 @@ select{
   }
 
 
-.label {
-  font-family: myBodyFont;
-  font-weight: 600;
-  font-size: 16pt;
+.inpdesc {
+  font-family: "Antic", "sans-serif";
+  font-weight: 60;
+  font-size: 12pt;
+  color: grey;
 }
 
-a:not(#logoclick){
+a{
   text-decoration: none;
   color:white;
   transition: color 0.3s ease;
@@ -237,10 +214,9 @@ a:hover :not(#submitbutton){
 
 #menu li{
   padding: 10px 0;
-  font-size: 33px;
   padding-left: 5vw;
-  margin-top: 15%;
-  top: 20%;
+  font-size: 26px;
+  margin-top: 45px;
 }
 
 /*
@@ -253,155 +229,24 @@ a:hover :not(#submitbutton){
 
 }
 
-@media only screen and (min-height: 667px) {
-
-  #submitbutton{
-    width:50%;
-    height:40px;
-    background-color: #00ff00;
-    color: white;
-    font-family: 'Questrial', sans-serif;
-    position: absolute;
-    border-radius: 7px;
-    bottom: 8%;
-    left: 28%;
-    font-size: 21px;
-  }
-  
-  #submitbutton:hover{
-    background-color: dodgerblue;
-  }
 
 
 
-}
-
-@media only screen and (min-height: 568px) and (max-width: 320px){
-
-  #submitbutton{
-    width:45%;
-    height:35px;
-    background-color: #00ff00;
-    color: white;
-    font-family: 'Questrial', sans-serif;
-    position: absolute;
-    border-radius: 7px;
-    bottom: 7%;
-    left: 28%;
-    font-size: 18px;
-  }
-  
-  #submitbutton:hover{
-    background-color: dodgerblue;
-  }
-  
-  .custom-select{
-    font-family: "Questrial", "Sans-Serif";
-    top: 24%;
-    position: absolute;
-    width:100%;
-    height: 60%;
-  }
-  
-  
-  .inp{
-    font-family: "Questrial", "Sans-Serif";
-    font-size: 17px;
-  }
-
-  select{
-    margin-bottom: 2rem;
-    width: 60%;
-    height: 40px;
-    font-size: 17pt;
-    font-family: "Questrial", "Sans-Serif";
-    background-color: dodgerblue;
-    color: white;
-  } 
-}
-
-
-  @media only screen and (min-height: 640px) and (max-width: 360px){
-
-    #submitbutton{
-      width:45%;
-      height:35px;
-      background-color: #00ff00;
-      color: white;
-      font-family: 'Questrial', sans-serif;
-      position: absolute;
-      border-radius: 7px;
-      bottom: 6%;
-      left: 28%;
-      font-size: 18px;
-    }
-    
-    #submitbutton:hover{
-      background-color: dodgerblue;
-    }
-}
-
-@media only screen and (min-height: 1024px) and (max-width: 768px){
-
-  #submitbutton{
-    width:45%;
-    height:45px;
-    background-color: #00ff00;
-    color: white;
-    font-family: 'Questrial', sans-serif;
-    position: absolute;
-    border-radius: 7px;
-    bottom: 18%;
-    left: 28%;
-    font-size: 18px;
-  }
-  
-  #submitbutton:hover{
-    background-color: dodgerblue;
-  }
-
-  .custom-select{
-    font-family: "Questrial", "Sans-Serif";
-    top: 30%;
-    position: absolute;
-    width:100%;
-    height: 60%;
-  }
-
-}
-
-@media only screen and (min-height: 1024px) and (max-width: 1366px){
-
-  #submitbutton{
-    width:45%;
-    height:50px;
-    background-color: #00ff00;
-    color: white;
-    font-family: 'Questrial', sans-serif;
-    position: absolute;
-    border-radius: 7px;
-    bottom: 18%;
-    left: 28%;
-    font-size: 18px;
-  }
-  
-  #submitbutton:hover{
-    background-color: dodgerblue;
-  }
-
-  .custom-select{
-    font-family: "Questrial", "Sans-Serif";
-    top: 40%;
-    position: absolute;
-    width:100%;
-    height: 60%;
-  }
 
   #corner_pink {
     position: fixed;
     bottom: 0;
     right: 0;
     transform: rotate(90deg);
+    z-index: -1;
+  }
+
+
+  #corner_blue {
+    top: 0;
+    position: fixed;
+    right: 0;
+    transform:  rotate(0deg);
     z-index: -1;
   }
 
@@ -412,4 +257,23 @@ a:hover :not(#submitbutton){
     left: 0;
   }
 
+  #corner_green {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform:  rotate(180deg);
+    z-index: -1;
+  }
+
+
+  .Corner-art {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
 }
+

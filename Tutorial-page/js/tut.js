@@ -44,3 +44,6 @@ window.onload = function() {
     window.location = "My-Moovies.html";
   });
 }
+function goBack() {
+  window.history.back();
+}
