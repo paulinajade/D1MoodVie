@@ -1,5 +1,15 @@
 @media only screen and (max-width: 475px) {
 
+  @font-face {
+    font-family: myTitleFont;
+    src: url(Righteous-Regular.ttf);
+    }
+    
+    @font-face {
+    font-family: myBodyFont;
+    src: url(Questrial-Regular.ttf);
+    }
+
   body {
   margin: 0;
   padding: 0;
@@ -183,16 +193,6 @@
   bottom: 0;
   transform:  rotate(180deg);
   z-index: -1;
-}
-
-@font-face {
-font-family: myTitleFont;
-src: url(Righteous-Regular.ttf);
-}
-
-@font-face {
-font-family: myBodyFont;
-src: url(Questrial-Regular.ttf);
 }
 
 

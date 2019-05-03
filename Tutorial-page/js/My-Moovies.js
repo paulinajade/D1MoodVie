@@ -1,10 +1,9 @@
-var localStorage = window.localStorage;
+
 
 window.onload = function() {
   // Get 'my movies' and 'all movies' from local storage
   var myMovies = JSON.parse(localStorage.getItem('myMovies'));
-  var allMovies = JSON.parse(localStorage.getItem('movies'));
-
+  var allMovies = movies;
   // Loop through 'my movies' and display on page
   for (i = 0; i < myMovies.length; i++) {
     var movie = myMovies[i];

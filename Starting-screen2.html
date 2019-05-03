@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Questrial|Righteous" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Antic|Questrial|Righteous" rel="stylesheet">
     <link href="css/app.css" type="text/css" rel="stylesheet"/>
-    <script src="js/app.js"></script>
+    
   </head>
 
 
@@ -52,31 +52,34 @@
 <div class="custom-select">
   <span class="inpdesc"> Today I am feeling: </span>
   <br><br>
-  <select class="select" id="mood">
-    <option class="inp" value="0">Happy</option>
-    <option class="inp" value="1">Sad</option>
-    <option class="inp" value="2">Brave</option>
-    <option class="inp" value="3">Loving</option>
+  <select class="select" id="mood" onchange="changeMood(this)">
+    <option disabled selected>Choose One</option>
+    <option class="inp" value="Happy">Happy</option>
+    <option class="inp" value="Sad">Sad</option>
+    <option class="inp" value="Brave">Brave</option>
+    <option class="inp" value="Loving">Loving</option>
   </select>
   <br><br><br>
   <span class="inpdesc"> My prefered genre is: </span>
   <br><br>
-  <select class="select" id="genre">
-    <option class="inp" value="0">Comedy</option>
-    <option class="inp" value="1">Horror/Thriller</option>
-    <option class="inp" value="2">Romance</option>
-    <option class="inp" value="3">Drama</option>
+  <select class="select" id="genre" onchange="changeGenre(this)">
+    <option disabled selected>Choose One</option>
+    <option class="inp" value="Comedy">Comedy</option>
+    <option class="inp" value="Horror/Thriller">Horror/Thriller</option>
+    <option class="inp" value="Romance">Romance</option>
+    <option class="inp" value="Drama">Drama</option>
   </select>
   <br><br><br>
   <span class="inpdesc"> My prefered era is: </span>
   <br><br>
-  <select class="select" id="era">
-    <option class="inp" value="0">Before 2000s</option>
-    <option class="inp" value="1">After 2000s</option>
+  <select class="select" id="era" onchange="changeEra(this)">
+    <option disabled selected>Choose One</option>
+    <option class="inp" value="Before-2000s">Before 2000s</option>
+    <option class="inp" value="After-2000s">After 2000s</option>
   </select>   
 </div>
 <br><br><br><br>
-<button type="button" id="submitbutton"><a href="Tutorial-page/Movies-page.html">Submit</a></button>
+<button type="button" id="submitbutton" onclick="changePage()">Submit</button>
 
 <svg width="100px" height="100px" version="1.1" id="corner_pink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="0 0 161.23 161.23" style="enable-background:new 0 0 161.23 161.23;" xml:space="preserve">
@@ -85,5 +88,9 @@ viewBox="0 0 161.23 161.23" style="enable-background:new 0 0 161.23 161.23;" xml
 </style>
 <polygon class="st1" points="125.1,36.12 125.1,124.92 161.1,160.92 161.1,0.12 0.3,0.12 36.3,36.12 "/>
 </svg>
+
+
+<script src="js/app.js"></script>
+
   </body>
 </html>

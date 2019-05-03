@@ -1,13 +1,9 @@
-var localStorage = window.localStorage;
-
 window.onload = function() {
   // Get all movies from local storage
-  var stringifiedMovies = localStorage.getItem('movies');
-  var movies = JSON.parse(stringifiedMovies);
+console.log(movies);
 
   // Grab the current movie selected from local storage
   var currentMovieTitle = localStorage.getItem('currentMovieTitle');
-
   // Search through all movies to find the selected one
   var currentMovie;
   for (i = 0; i < movies.length; i++) {

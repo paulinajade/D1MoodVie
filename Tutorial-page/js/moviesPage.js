@@ -50,7 +50,7 @@ window.onload = function() {
     var form = document.createElement('form');
     form.setAttribute('action', 'Tutorial.html');
     form.setAttribute('method', 'get');
-    form.setAttribute('target', '_blank');
+    form.setAttribute('target', '_self');
 
     // Add button element to container
     var button = document.createElement('button');
