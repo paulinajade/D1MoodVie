@@ -1,3 +1,5 @@
+
+
 window.onload = function() {
   // Get 'my movies' and 'all movies' from local storage
   var myMovies = JSON.parse(localStorage.getItem('myMovies'));
@@ -13,6 +15,8 @@ window.onload = function() {
         currentMovie = filteredMovie;
       }
     }
+
+    
     
     // Create elements with movie information
     var movieCont = document.createElement('div');
@@ -33,4 +37,8 @@ window.onload = function() {
 
     document.getElementsByClassName('moovie-grid')[0].appendChild(movieCont);
   }
+  
+}
+function goBack() {
+  window.history.back();
 }

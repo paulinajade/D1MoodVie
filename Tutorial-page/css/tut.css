@@ -23,8 +23,8 @@
 
   #logo {
     width:40vw;
-    top: 4vh;
-    left: 30vw;
+    top: 6vh;
+    left: 29vw;
     height: 4vh;
     position: fixed;
     background-color: white;
@@ -44,7 +44,7 @@
   background-color: white;
   color: #008cff;
   margin-top: 14vh;
-  font-size: 16pt;
+  font-size: 13pt;
   }
   
 
@@ -80,6 +80,14 @@
     font-family: myTitleFont;
   }
 
+
+#backarrow{
+  width: 45px;
+  height: 40px;
+  position: absolute;
+  left: 6%;
+  top: 28%;
+}
 
 
 
@@ -148,7 +156,7 @@
    * Just a quick hamburger
    */
   #menuToggle span{
-    top: 20px;
+    top: 2.5vh;
     right: 5px;
     position: fixed;
     display: block;
@@ -289,9 +297,10 @@
   }
 
   #movietitle {
+
     position: relative;
     font-family: "Questrial", "Sans-Serif";
-    margin-top: 20vh;
+    margin-top: 30vh;
     font-size: 16pt;
   }
 

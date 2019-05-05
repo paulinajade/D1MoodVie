@@ -155,6 +155,10 @@ function FinalPageInit(){
   
 }
 
+function goBack() {
+  window.history.back();
+}
+
 function save(){
   localStorage.setItem("package",JSON.stringify(proxPkg));
   
