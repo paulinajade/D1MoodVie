@@ -1,5 +1,7 @@
 @media only screen and (max-width: 475px) {
 
+
+
   body {
     margin: 0;
     padding: 0;
@@ -30,7 +32,7 @@
 
   .headbar {
     top: 0;
-    height: 10vh;
+    height: 15vh;
     width: 100vw;
     background-color:white;
     position: fixed;
@@ -38,9 +40,9 @@
   }
 
   #logo {
-    width: 50vw;
+    width: 40vw;
     top: -100%;
-    left: 25%;
+    left: 30%;
     position: absolute;
   }
 
@@ -52,15 +54,13 @@
     top:28%;
   }
   
-
-
-
-
   .page-header {
     color: #008cff;
-    margin-top: 10vh;
-    font-size: 12pt;
+    background-color: white;
+    margin-top: 7vh;
+    font-size: 16pt;
     width: 100vw;
+    
     top: 7%;
     position: fixed;
     font-family: myBodyFont;
@@ -95,11 +95,10 @@
   }
 
   #firstmovie{
-    margin-top: 20vw;
+   
   }
 
   .footer {
-    position: absolute;
     height: 70px;
     bottom: 0;
     width: 100vw;
@@ -108,7 +107,7 @@
 
 .footer>span{
   color:white;
-  margin-top:10px;
+ 
 }
 
 .footertext>hr{
@@ -116,11 +115,10 @@
 }
 
 .footertext {
-  font-size: 9pt;
+  font-size: 7pt;
   color:white;
   font-family: "Antic","Sans-Serif";
   text-align: center;
-  padding-top: 10px;
 }
 
 #app2 {

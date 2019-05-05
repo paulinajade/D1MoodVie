@@ -1,395 +1,378 @@
 @media only screen and (max-width: 475px) {
 
-  body {
-  margin: 0;
-  padding: 0;
-  }
+    @font-face {
+      font-family: myTitleFont;
+      src: url(Righteous-Regular.ttf);
+      }
+      
+      @font-face {
+      font-family: myBodyFont;
+      src: url(Questrial-Regular.ttf);
+      }
 
-  .page-header-cont {
-    top: 10vh;
-    position: relative;
-    font-family: myTitleFont;
-  }
-
-  .navigation {
-    z-index: 1;
-  }
-
-  .description {
-    font-family: myBodyFont;
-  }
+    body {
+    margin: 0;
+    padding: 0;
+    }
 
 
-  .searchbar {
-    position: relative;
-    width: 60vw;
-    height: 3vh;
-    border-radius: 15px;
-    font-size: 18pt;
-    font-family: myTitleFont;
-  }
+    .navigation {
+      z-index: 1;
+    }
+
+    .description {
+      font-family: myBodyFont;
+    }
+
+
+    .searchbar {
+      position: relative;
+      width: 60vw;
+      height: 3vh;
+      border-radius: 15px;
+      font-size: 18pt;
+      font-family: myTitleFont;
+    }
 
 
 
-  .headbar {
-    top: 0;
-    height: 10vh;
-    width: 100vw;
-    background-color:white;
-    position: fixed;
-    z-index: 1;
-  }
+    .headbar {
+      top: 0;
+      height: 10vh;
+      width: 100vw;
+      background-color:white;
+      position: fixed;
+      z-index: 1;
+    }
 
-  .title {
-    font-family: myBodyFont;
-  }
+    .title {
+      font-family: myBodyFont;
+    }
 
 
-  #logo {
-    width:40vw;;
-    top: 4vh;
-    left: 30vw;
-    height: 4vh;
-    position: fixed;
+    #logo {
+      width:40vw;
+      top: 4vh;
+      left: 30vw;
+      height: 4vh;
+      position: fixed;
+      background-color: white;
+    }
+
+
+
+
+    .page-header-cont {
+      width: 100vw;
+      top: 5vh;
+      position: fixed;
+
+      background-color: white;
+    }
+
+    .page-header {
+      font-family:  myBodyFont;
+    color: #008cff;
+    margin-top: 10vh;
+    font-size: 16pt;
     background-color: white;
-  }
-
-
-
-
-  .page-header-cont {
-    width: 100vw;
-    top: 10vh;
-    position: fixed;
-    font-family: myTitleFont;
-    background-color: white;
-  }
-
-  .page-header {
-  color: #008cff;
-  margin-top: 10vh;
-  font-size: 16pt;
-  background-color: white;
-  text-align: center;
-  height: 40px;
-  }
-
-
-  .moovie-grid {
-    display: grid;
-    grid-template-columns: auto auto ;
-    margin-bottom: 300px;
-    border:20px transparent;
-  }
-
-  .movietitle {
-    font-size: 15pt;
-    font-family: "Questrial", "Sans-Serif";
-  }
-
-  
-
-
-
-  
-
-  .moovie-cont {
-    position: relative;
-    top: 17vh;
     text-align: center;
-    margin-top: 5vh;
+    height: 40px;
+    }
+
+    .moovie-grid {
+      display: grid;
+      grid-template-columns: 50vw 50vw;
+      margin-bottom: 300px;
+      border:20px transparent;
+    }
+
+    .movietitle {
+      font-size: 15pt;
+      font-family: "Questrial", "Sans-Serif";
+    }
+
+    .movie-image {
+      width: 100px;
+      height: 140px;
+    }
+
+    .moovie-cont {
+      position: relative;
+      top: 17vh;
+      text-align: center;
+      margin-top: 5vh;
+    }
+
+  img {
+      width: 28vw;
+    }
+
+    .search-title {
+      font-family: myBodyFont;
+    }
+
+  .pagetitle {
+    font-size: 18pt;
+    text-align: center;
+    font-family: myTitleFont;
   }
 
 
- img {
-    width: 28vw;
+
+
+  .movies {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    margin-top: vw;
+
   }
 
-  .search-title {
+  .footer {
+    position: relative;
+    height: 50vh;
+    bottom: 0;
+    width: 100vw;
+    background-color: #008cff;
+  }
+
+  #app2 {
+    text-align: center;
+  }
+
+  #corner_pink {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: rotate(90deg);
+    z-index: -1;
+  }
+
+  .moviebutt {
+    width: 25vw;
+    height: 5vh;
+    border-radius: 20px;
+    background-color: #008cff;
+    color: #FFFFFF;
     font-family: myBodyFont;
+    font-size: 12pt;
+    margin-top: 3vh;
+
   }
 
-.pagetitle {
-  font-size: 18pt;
-  text-align: center;
-  font-family: myTitleFont;
-}
 
-.page-header {
-  font-family: myTitleFont;
-  color: #008cff;
-}
+  #corner_blue {
+    top: 0;
+    position: fixed;
+    right: 0;
+    transform:  rotate(0deg);
+    z-index: -1;
+  }
 
+  #corner_yellow {
+    top: 0;
+    position: fixed;
+    transform: rotate(270deg);
+    left: 0;
+  }
 
-.movies {
-  position: relative;
-  display: inline-block;
-  margin: auto;
-  margin-top: vw;
+  #corner_green {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform:  rotate(180deg);
+    z-index: -1;
+  }
 
-}
+  a{
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+  }
 
-.footer {
-  position: relative;
-  height: 50vh;
-  bottom: 0;
-  width: 100vw;
-  background-color: #008cff;
-}
+  a:hover{
+    color: yellow;
+  }
 
-#app2 {
-  text-align: center;
-}
+  #menuToggle{
+    display: inline;
+    position: absolute;
+    top: 20%;
+    right: 6.5%;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
 
-#corner_pink {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  transform: rotate(90deg);
-  z-index: -1;
-}
+  #menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
 
-.moviebutt {
-  width: 25vw;
-  height: 5vh;
-  border-radius: 20px;
-  background-color: #008cff;
-  color: #FFFFFF;
-  font-family: myBodyFont;
-  font-size: 12pt;
-  margin-top: 3vh;
+  /*
+  * Just a quick hamburger
+  */
+  #menuToggle span{
+    top: 20px;
+    right: 5px;
+    position: fixed;
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 4px;
+    position: relative;
+    background:grey;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
 
-}
+  #menuToggle span:first-child{
+    transform-origin: 0% 0%;
+  }
 
+  #menuToggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+  }
 
-#corner_blue {
-  top: 0;
-  position: fixed;
-  right: 0;
-  transform:  rotate(0deg);
-  z-index: -1;
-}
+  /*
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+  #menuToggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: yellow;
+  }
 
-#corner_yellow {
-  top: 0;
-  position: fixed;
-  transform: rotate(270deg);
-  left: 0;
-}
+  /*
+  * But let's hide the middle one.
+  */
 
-#corner_green {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  transform:  rotate(180deg);
-  z-index: -1;
-}
+  #menuToggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
 
-@font-face {
-font-family: myTitleFont;
-src: url(Righteous-Regular.ttf);
-}
+  /*
+  * Ohyeah and the last one should go the other direction
+  */
 
-@font-face {
-font-family: myBodyFont;
-src: url(Questrial-Regular.ttf);
-}
+  #menuToggle input:checked ~ span:nth-last-child(2){
+    transform: rotate(-45deg) translate(0, -1px);
+  }
 
+  /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
 
-a{
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-}
+  #menu{
+    position: absolute;
+    width: 100vw;
+    margin: 0 0 0 -100vw;
+    padding: 50px;
+    height: 100vh;
+    background-color: #008cff;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(0%, -130%);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    text-align: center;
+  }
 
-a:hover{
-  color: yellow;
-}
+  #menu li{
+    padding: 10px 0;
+    font-size: 33px;
+    padding-left: 5vw;
+    font-family:myBodyfont;
+    margin-top:15%;
+    color:white;
+  }
 
-#menuToggle{
-  display: inline;
-  position: absolute;
-  top: 20%;
-  right: 6.5%;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-}
+  #menu li:hover{
+    color:yellow;
+  }
 
-#menuToggle input{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: 5px;
-  right: 0px;
-  cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  -webkit-touch-callout: none;
-}
+  /*
+  * And let's slide it in from the left
+  */
+  #menuToggle input:checked ~ ul{
+    transform: translate(0%, 0%);
+    height: 100vh;
+    top: -40px;
 
-/*
- * Just a quick hamburger
- */
-#menuToggle span{
-  top: 20px;
-  right: 5px;
-  position: fixed;
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 4px;
-  position: relative;
-  background:grey;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2){
-  transform-origin: 0% 100%;
-}
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: yellow;
-}
-
-/*
- * But let's hide the middle one.
- */
-
-#menuToggle input:checked ~ span:nth-last-child(3){
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-
-#menuToggle input:checked ~ span:nth-last-child(2){
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-
-#menu{
-  position: absolute;
-  width: 100vw;
-  margin: 0 0 0 -100vw;
-  padding: 50px;
-  height: 100vh;
-  background-color: #008cff;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  transform-origin: 0% 0%;
-  transform: translate(0%, -130%);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  text-align: center;
-}
-
-#menu li{
-  padding: 10px 0;
-  font-size: 33px;
-  padding-left: 5vw;
-  font-family:myBodyfont;
-  margin-top:15%;
-  color:white;
-}
-
-#menu li:hover{
-  color:yellow;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul{
-  transform: translate(0%, 0%);
-  height: 100vh;
-  top: -40px;
-
-}
+  }
 
 
-.footer {
-  height: 20vh;
-  bottom: 0;
-  width: 100vw;
-  background-color: #008cff;
-  position:fixed;
-  display: flex;
-}
+  .footer {
+    height: 20vh;
+    bottom: 0;
+    width: 100vw;
+    background-color: #008cff;
+    position:fixed;
+    display: flex;
+  }
 
-.footer>span{
-  color:white;
-  margin-top:10px;
-}
+  .footer>span{
+    color:white;
+    margin-top:10px;
+  }
 
-.footertext>hr{
-  width:60%;
-}
+  .footertext>hr{
+    width:60%;
+  }
 
-.footertext {
-  margin-top:20px;
-  color:white;
-  font-family: "Antic","Sans-Serif";
-  position: absolute;
-}
- .footertext:not(hr){
-  left:25%;
+  .footertext {
+    margin-top:20px;
+    color:white;
+    font-family: "Antic","Sans-Serif";
+    position: absolute;
+  }
+  .footertext:not(hr){
+    left:25%;
 
- }
-
-
-.footer {
-  position: relative;
-  text-align: center;
-  height: 20vh;
-  bottom: 0;
-  width: 100vw;
-  background-color: #008cff;
-}
-
-.footer>span{
-  color:white;
-  margin-top:10px;
-}
-
-.footertext>hr{
-  width:60%;
-}
-
-.footertext {
-  font-size: 10pt;
-  margin-top:20px;
-  color:white;
-  font-family: "Antic","Sans-Serif";
-  text-align: center;
-  padding-top: 10px;
-}
+  }
 
 
+  .footer {
+    position: relative;
+    text-align: center;
+    height: 20vh;
+    bottom: 0;
+    width: 100vw;
+    background-color: #008cff;
+  }
 
+  .footer>span{
+    color:white;
+    margin-top:10px;
+  }
 
+  .footertext>hr{
+    width:60%;
+  }
 
-
+  .footertext {
+    font-size: 10pt;
+    margin-top:20px;
+    color:white;
+    font-family: "Antic","Sans-Serif";
+    text-align: center;
+    padding-top: 10px;
+  }
 }

@@ -40,11 +40,10 @@
   }
 
   .page-header {
-  font-family: myTitleFont;
+  font-family: myBodyFont;
   background-color: white;
-  width: 100vw;
   color: #008cff;
-  margin-top: 9vh;
+  margin-top: 14vh;
   font-size: 16pt;
   }
   
@@ -55,7 +54,7 @@
     
     background-color:white;
     text-align: center;
-    height: 13vh;
+    height: 17vh;
     width: 100vw;
     position: fixed;
     z-index: 1;

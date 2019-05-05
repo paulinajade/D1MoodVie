@@ -6,15 +6,15 @@ img {
 width:300px;
 top:120px;
 position: absolute;
-left: 20%;
+left: 0;
 }
 
 
 #logo {
   position: absolute;
   top: 13.5vh;
-  width: 60vw;
-  left: 19vw;
+  width: 50%;
+  left: 24vw;
 }
 
 
@@ -64,8 +64,6 @@ body {
   top: 0;
 }
 
-
-
 select{
   margin-bottom: 2rem;
   width: 60%;
@@ -79,12 +77,12 @@ select{
  
 @font-face {
   font-family: myTitleFont;
-  src: url(Righteous-Regular.ttf);
+  src: url(../Tutorial-page/css/Righteous-Regular.ttf);
   }
 
   @font-face {
   font-family: myBodyFont;
-  src: url(Questrial-Regular.ttf);
+  src: url(../Tutorial-page/css/Questrial-Regular.ttf);
   }
 
 
