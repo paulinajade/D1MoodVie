@@ -119,7 +119,7 @@ var movies = [
     "longDescription":"The relationship of a contemporary married couple, charting their evolution over a span of years by cross-cutting between time periods."
   },
   {
-    "title": "The Pursuit of Happyness (2006)",
+    "title": "The Pursuit of Happiness (2006)",
     "url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Poster-pursuithappyness.jpg/220px-Poster-pursuithappyness.jpg",
     "description": "Rated PG-13 for some language.",
     "genre": "Drama",
@@ -368,7 +368,7 @@ var movies = [
     "description": "Rated R for graphic bloody violence.",
     "genre": "Horror/Thriller",
     "mood": "Happy",
-    "era": "After-2000s"
+    "era": "After-2000s",
     "longDescription":"The infamous story of Benjamin Barker, aka Sweeney Todd, who sets up a barber shop in London which is the basis for a sinister partnership with his fellow tenant, Mrs. Lovett."
   },
   {

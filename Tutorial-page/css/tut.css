@@ -242,9 +242,12 @@
 
   }
 
-  img {
-    width: 280px;
-    height:310px;
+  img not:(#logo, #backarrow){
+    width: auto;
+    height: 300px; 
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px #00000059;
+    margin: auto;
   }
 
   /*
@@ -302,6 +305,8 @@
     font-family: "Questrial", "Sans-Serif";
     margin-top: 30vh;
     font-size: 16pt;
+    color:rgb(66, 66, 66);
+
   }
 
 
@@ -313,7 +318,7 @@
     font-family: myBodyFont;
     font-size: 12pt;
     margin-bottom: 10vh;
-
+    color:rgb(66, 66, 66);
   }
 
 
