@@ -1,6 +1,4 @@
 
-@media only screen and (max-width: 475px) {
-
 
 img {
 width:300px;
@@ -51,6 +49,7 @@ left: 0;
   background-color: #008cff;
   border-radius: 2%;
   border-radius: 10px;
+
 }
 
 
@@ -60,7 +59,7 @@ left: 0;
 
 .label{
   display: block;
-  margin-left: 4.3vw;
+  margin-left: 5vw;
 }
 
 /* End of mood */
@@ -417,6 +416,10 @@ a:hover :not(#submitbutton){
 
 
 
-
-}
+  @media only screen and (min-width: 375px) and(max-height: 812px) {
+    #submitbutton{
+      bottom: 70px; 
+      position: absolute;
+    }
+  }
 
