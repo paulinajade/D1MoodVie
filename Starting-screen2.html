@@ -36,7 +36,7 @@
             <span></span>
             <ul id="menu">
               <a href="Starting-screen2.html"><li>Home</li></a>
-              <a href="img/moodvie.svg"><li>MyMoovies</li></a>
+              <a href="Tutorial-page/My-Moovies.html"><li>MyMoovies</li></a>
             </ul>
           </div>
         </nav>
@@ -52,33 +52,99 @@
 <div class="custom-select">
   <span class="inpdesc"> Today I am feeling: </span>
   <br><br>
-  <select class="select" id="mood" onchange="changeMood(this)">
-    <option disabled selected>Choose One</option>
-    <option class="inp" value="Happy">Happy</option>
-    <option class="inp" value="Sad">Sad</option>
-    <option class="inp" value="Brave">Brave</option>
-    <option class="inp" value="Loving">Loving</option>
-  </select>
+
+<!-- First input selection -->
+<div id="firstchoice">
+  <div id="one">
+  <div class="box">
+      <label for="Happy" id="haplabel" class="label">Happy</label>
+      <input type="radio" onchange="changeMood(this)" class="inp" value="Happy" name="feeling" id="happy"></input>
+    </div>
+    <div class="box">
+      <input type="radio" onchange="changeMood(this)" class="inp" value="Sad" name="feeling" id="sad"></input>
+      <label for="sad" id="sadlabel" class="label">Sad</label>
+    </div>
+    <div class="box">
+      <input type="radio" onchange="changeMood(this)" class="inp" value="Brave" name="feeling" id="brave"></input>
+      <label for="brave" id="bravlabel" class="label">Brave</label>
+    </div>
+    <div class="box">
+      <input type="radio" onchange="changeMood(this)" class="inp" value="Loving" name="feeling" id="loving"></input>
+      <label for="loving" id="lovlabel" class="label">Loving</label>
+    </div>
+</div>
+
+
+
+  
   <br><br><br>
+
+  <!-- Second input selection -->
   <span class="inpdesc"> My prefered genre is: </span>
   <br><br>
-  <select class="select" id="genre" onchange="changeGenre(this)">
-    <option disabled selected>Choose One</option>
-    <option class="inp" value="Comedy">Comedy</option>
-    <option class="inp" value="Horror/Thriller">Horror/Thriller</option>
-    <option class="inp" value="Romance">Romance</option>
-    <option class="inp" value="Drama">Drama</option>
-  </select>
-  <br><br><br>
-  <span class="inpdesc"> My prefered era is: </span>
-  <br><br>
-  <select class="select" id="era" onchange="changeEra(this)">
-    <option disabled selected>Choose One</option>
-    <option class="inp" value="Before-2000s">Before 2000s</option>
-    <option class="inp" value="After-2000s">After 2000s</option>
-  </select>   
+
+  
+  <div id="secondchoice">
+
+    <div id="two">
+    <div class="box2">
+        <label for="comedy" class="label2">
+        <input id="comedy" type="radio" name="genre" class="inp" value="Comedy"  onchange="changeGenre(this)"></input>
+       Comedy</label>
+      </div>
+
+      <div class="box2">
+          <label for="Horror/Thriller" class="label2">
+        <input id="Horror/Thriller" type="radio" name="genre" class="inp" value="Horror/Thriller" onchange="changeGenre(this)"></input>
+        Horror/Thriller</label>
+      </div>
+
+      <div class="box2">
+          <label  class="label2">
+        <input id="Romance" type="radio" name="genre" class="inp" value="Romance"  onchange="changeGenre(this)"></input>
+        Romance</label>
+      </div>
+      
+      <div class="box2">
+          <label for="Drama" class="label2">
+        <input id="Drama" type="radio" name="genre" class="inp" value="Drama"  onchange="changeGenre(this)"></input>
+        Drama</label>
+      </div>
+      </div>
+      
+
+   
 </div>
+ 
+ 
+
+  <br><br><br>
+   <!-- Third input selection -->
+  <span class="inpdescera"> My prefered era is: </span>
+  <br><br><br><br>
+  <div id="thirdchoice">
+
+    <div id="three">
+      <div class="box3">
+      <label class="thirdlabel">
+        <input name="era" type="radio" class="inp" value="Before-2000s" onchange="changeEra(this)"></input>
+      Before 2000s</label>
+      </div>
+
+      <div class="box3">
+      <label class="thirdlabel">
+         <input name="era" type="radio" class="inp" value="After-2000s" onchange="changeEra(this)"></input>
+        After 2000s</label>
+    </div>
+    </div>
+
+    </div>
+  
+  </div>
+</div>
+
 <br><br><br><br>
+
 <button type="button" id="submitbutton" onclick="changePage()">Submit</button>
 
 <!-- <svg width="100px" height="100px" version="1.1" id="corner_pink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
