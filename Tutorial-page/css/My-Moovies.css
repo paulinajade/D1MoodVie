@@ -26,12 +26,15 @@
 
 
     .searchbar {
-      position: relative;
+      position: absolute;
       width: 60vw;
+      top:20%;
+      left: 18%;
       height: 3vh;
       border-radius: 15px;
-      font-size: 18pt;
-      font-family: myTitleFont;
+      margin:0 auto;
+      font-size: 11pt;
+      font-family: myBodyFont;
     }
 
 
@@ -64,16 +67,15 @@
 
     .page-header-cont {
       width: 100vw;
-      top: 4vh;
+      top: 2vh;
       position: fixed;
-
       background-color: white;
     }
 
     .page-header {
       font-family:  myBodyFont;
     color: #008cff;
-    margin-top: 10vh;
+    margin-top: 5vh;
     font-size: 16pt;
     background-color: white;
     text-align: center;
@@ -110,7 +112,11 @@
 
     .search-title {
       font-family: myBodyFont;
-    }
+      position:absolute;
+      top:12%;
+      color:#494949;
+      left:30%;
+    } 
 
   .pagetitle {
     font-size: 18pt;
@@ -129,13 +135,13 @@
 
   }
 
-  .footer {
+ /* .footer {
     position: relative;
     height: 50vh;
     bottom: 0;
     width: 100vw;
     background-color: #008cff;
-  }
+  }*/
 
   #app2 {
     text-align: center;
@@ -328,59 +334,43 @@
 
 
   .footer {
-    height: 20vh;
-    bottom: 0;
-    width: 100vw;
-    background-color: #008cff;
-    position:fixed;
-    display: flex;
-  }
+  height: 20%;
+  bottom: 0;
+  width: 100vw;
+  background-color: #008cff;
+  position: absolute;
+  display: flex;
+}
 
-  .footer>span{
-    color:white;
-    margin-top:10px;
-  }
-
-  .footertext>hr{
-    width:60%;
-  }
-
-  .footertext {
-    margin-top:20px;
-    color:white;
-    font-family: "Antic","Sans-Serif";
-    position: absolute;
-  }
-  .footertext:not(hr){
-    left:25%;
-
-  }
+.footer>span{
+  color:white;
+  margin-top:10px;
+}
 
 
-  .footer {
-    position: relative;
-    text-align: center;
-    height: 20vh;
-    bottom: 0;
-    width: 100vw;
-    background-color: #008cff;
-  }
+.footertext {
+  margin-top:15px;
+  color:white;
+  font-family: "Antic","Sans-Serif";
+  position: relative;
+  margin-bottom: 15px;
+}
+.footertext:not(hr){
+  left:25%;
 
-  .footer>span{
-    color:white;
-    margin-top:10px;
-  }
+}
 
-  .footertext>hr{
-    width:60%;
-  }
 
-  .footertext {
-    font-size: 10pt;
-    margin-top:20px;
-    color:white;
-    font-family: "Antic","Sans-Serif";
-    text-align: center;
-    padding-top: 10px;
-  }
+.footertext>hr{
+  width:60%;
+}
+
+.footertext {
+  font-size: 10pt;
+  margin-top:15px;
+  color:white;
+  font-family: "Antic","Sans-Serif";
+  text-align: center;
+  padding-top: 10px;
+}
 }

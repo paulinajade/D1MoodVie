@@ -101,7 +101,7 @@ var movies = [
 
   {
     "title": "Childs Play (1988)",
-    "url": "https://images.g2a.com/newlayout/323x433/1x1x0/e99d0adb9994/593138645bafe369e3079412",
+    "url": "http://t2.gstatic.com/images?q=tbn:ANd9GcTspbwH_3GejHHJcvumOFhPoLd8GxyZQH4Pv40IjksXGH6W1HCZ",
     "description": "Rated R for horror violence, terror, and for language.",
     "genre": "Horror/Thriller",
     "mood": "Brave",

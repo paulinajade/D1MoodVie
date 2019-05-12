@@ -48,6 +48,7 @@
     top: -100%;
     left: 30%;
     position: absolute;
+    z-index: 1;
   }
 
   #backarrow{
@@ -61,12 +62,11 @@
   .page-header {
     color: #008cff;
     background-color: white;
-    margin-top: 7vh;
+    margin-top: 5.3vh;
     font-size: 16pt;
     width: 100vw;
-    
-    top: 7%;
-    position: fixed;
+    top: 0%;
+    position: relative;
     font-family: myBodyFont;
   }
 
@@ -106,7 +106,7 @@
    
   }
 
-  .footer {
+ /*.footer {
     height: 70px;
     bottom: 0;
     width: 100vw;
@@ -127,6 +127,47 @@
   color:white;
   font-family: "Antic","Sans-Serif";
   text-align: center;
+}*/
+
+.footer {
+  height: 20%;
+  bottom: 0;
+  width: 100vw;
+  background-color: #008cff;
+  position: relative;
+  display: flex;
+}
+
+.footer>span{
+  color:white;
+  margin-top:10px;
+}
+
+
+.footertext {
+  margin-top:15px;
+  color:white;
+  font-family: "Antic","Sans-Serif";
+  position: relative;
+  margin-bottom: 15px;
+}
+.footertext:not(hr){
+  left:25%;
+
+}
+
+
+.footertext>hr{
+  width:60%;
+}
+
+.footertext {
+  font-size: 10pt;
+  margin-top:15px;
+  color:white;
+  font-family: "Antic","Sans-Serif";
+  text-align: center;
+  padding-top: 10px;
 }
 
 #app2 {

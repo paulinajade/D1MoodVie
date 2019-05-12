@@ -243,11 +243,14 @@
   }
 
   img not:(#logo, #backarrow){
-    width: auto;
-    height: 300px; 
     border-radius: 10px;
     box-shadow: 8px 8px 5px #00000059;
     margin: auto;
+
+    width: 200px;
+    height: 300px; 
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px #00000059;
   }
 
   /*
@@ -262,11 +265,16 @@
   .movie-image {
     margin: auto;
     width: 50px;
+
+    width: 200px;
+    height: 300px; 
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px #00000059;
   }
 
   .image-cont {
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 7vh;
 
   }
 
