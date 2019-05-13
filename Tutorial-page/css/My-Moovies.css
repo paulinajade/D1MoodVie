@@ -1,4 +1,3 @@
-@media only screen and (max-width: 475px) {
 
     @font-face {
       font-family: myTitleFont;
@@ -373,4 +372,10 @@
   text-align: center;
   padding-top: 10px;
 }
+
+@media only screen and (min-width: 1199px) and (max-width: 2000px)  {
+
+  .footertext{
+      text-align: center; 
+     }
 }

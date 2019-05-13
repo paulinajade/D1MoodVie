@@ -433,7 +433,7 @@ a:hover :not(#submitbutton){
       align-content: center;
       justify-content: center;
       background-color: #008cff;
-      top: 7vh;
+      top: 2vh;
       position: relative;
       height: 50px;
       width: 100%;
@@ -506,16 +506,10 @@ a:hover :not(#submitbutton){
 
         @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
 
-          #three{
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            background-color: #008cff;
-            top: 7vh;
+
+          #thirdchoice{
+            top:7vh;
             position: relative;
-            height: 50px;
-            width: 100%;
-            border-radius: 10px;
           }
           
       
@@ -536,7 +530,7 @@ a:hover :not(#submitbutton){
             display: inline-block;
             width: 100%;
             height: 90px;
-            top:5vh;
+            top:2vh;
             position: relative;
             color: black;
             border-radius: 10px;
@@ -568,7 +562,7 @@ a:hover :not(#submitbutton){
     
             #inpdescgenre{
                 position: relative;
-                top: 5vh;
+                top: 2vh;
                 font-size: 14pt;
               }
     
@@ -592,6 +586,15 @@ a:hover :not(#submitbutton){
             position: absolute;
           }
 
+          #thirdchoice{
+            top:8vh;
+            position: relative;
+          }
+
+          #inpdescera{
+            top:-10px;
+            position: relative;
+          }
         }
 
         @media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
@@ -612,7 +615,11 @@ a:hover :not(#submitbutton){
 
           #secondchoice{
             margin-top: -10px;
-            margin-bottom: -10px;
+          }
+
+          #inpdescera{
+            position: relative;
+            top:-43px;
           }
 
         }
@@ -651,6 +658,31 @@ a:hover :not(#submitbutton){
             position: absolute;
             height: 40px;
           }
+
+          #thirdchoice{
+            top:3vh;
+            position: relative;
+          }
         }
 
+        @media only screen and (min-width: 770px) and (min-width: 821px)  {
+
+
+          #secondchoice{
+            margin-bottom: -25px;
+          }
+
+          #thirdchoice{
+            margin-top: 0px;
+          }
+
+          #logo {
+            top: 6vh;
+          }
+
+          #submitbutton {
+            bottom:50px;
+          }
+
+        }
 
